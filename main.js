@@ -1,7 +1,7 @@
 javascript: 
 	var coins = 0;
 	var minelvl = 1;
-	var picklvl = 0;
+	var picklvl = 1;
 	var upgradepicklvlprice = 500000;
 	var coinAdd = 0;
 	var mineupgradeprice = 100;
@@ -25,10 +25,10 @@ javascript:
 	document.write("<p class='child' id='autominercount'>0</p>");
 	document.write("<p></p>");
 	document.write("<button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $" + upgradepicklvlprice + "</button>");
-		document.write("<p class='child' id='picklvl'>0</p>");
+		document.write("<p class='child' id='picklvl1'>1</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.211</p></center>");	
+	document.write("<center><p>v1.212</p></center>");	
 	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
@@ -152,7 +152,7 @@ function upgradepicklvl(){
 			coins = coins - upgradepicklvlprice;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 			picklvl = picklvl + 1;
-			document.getElementById("picklvl").innerHTML = " " + picklvl;
+			document.getElementById("picklvl1").innerHTML = " " + picklvl;
 			var upgradepicklvlprice1 = upgradepicklvlprice * 3.5;
 			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
 			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pick LVL for $" + upgradepicklvlprice;
