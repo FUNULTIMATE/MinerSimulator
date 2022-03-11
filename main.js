@@ -163,16 +163,16 @@ function upgradepicklvl(){
 			};
 };
 function mine(){
-			coins = coins + 1 + coinAdd ;
+			coins = coins + 1 + coinAdd * picklvl;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
-			coins = coins + 1 + coinAdd * autominercount + 0.5;
+			coins = coins + 1 + coinAdd * autominercount;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function txttst(){
 	var txt = prompt("Insert Developer password to continue:");
 		if(txt == password){
-			coins = 100000000;
+			coins = coins + 100000000;
 };
 };
