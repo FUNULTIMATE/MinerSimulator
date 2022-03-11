@@ -1,5 +1,8 @@
+javascript: 
 	var coins = 0;
 	var minelvl = 1;
+	var picklvl = 0;
+	var upgradepicklvlprice;
 	var coinAdd = 0;
 	var mineupgradeprice = 100;
 	var autominerupgradeprice = 500;
@@ -19,10 +22,13 @@
 	document.write("<p class='child' id='minelvlcount'>1</p>");	
 	document.write("<p></p>");
 	document.write("<button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $" + autominerupgradeprice + "</button>");
-	document.write("<p class='child' id='autominercount'>0</p>");	
+	document.write("<p class='child' id='autominercount'>0</p>");
+	document.write("<p></p>");
+	document.write("<button onclick='upgrademinelvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $" + upgradepicklvlprice + "</button>");
+		document.write("<p class='child' id='picklvl'>0</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.15</p></center>");	
+	document.write("<center><p>v1.2</p></center>");	
 	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
@@ -140,12 +146,28 @@ function upgradeautominercount(){
 			};
 			};
 };
+
+function upgradepicklvl(){
+			if(coins >= upgradepicklvlprice){
+			coins = coins - upgradepicklvlprice;
+			document.getElementById("coincount").innerHTML = "$" + coins;
+			picklvl = picklvl + 1;
+			document.getElementById("picklvl").innerHTML = " " + picklvl;
+			var upgradepicklvlprice1 = upgradepicklvlprice * 3.5;
+			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
+			document.getElementById("upgradebutton3").innerHTML = "Upgrade Auto Miner Count for $" + upgradepicklvlprice;
+			coinspersec1 = 1 + coinAdd * picklvl + 0.5;
+			coinspersec2 = coinspersec1 * autominercount;
+			coinspersec = coinspersec2 * 20;
+			document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
+			};
+};
 function mine(){
-			coins = coins + 1 + coinAdd;
+			coins = coins + 1 + coinAdd ;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
-			coins = coins + 1 + coinAdd * autominercount;
+			coins = coins + 1 + coinAdd * autominercount + 0.5;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function txttst(){
