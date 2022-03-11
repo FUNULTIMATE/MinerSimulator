@@ -155,7 +155,7 @@ function upgradepicklvl(){
 			document.getElementById("picklvl").innerHTML = " " + picklvl;
 			var upgradepicklvlprice1 = upgradepicklvlprice * 3.5;
 			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
-			document.getElementById("upgradebutton3").innerHTML = "Upgrade Auto Miner Count for $" + upgradepicklvlprice;
+			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pick LVL for $" + upgradepicklvlprice;
 			coinspersec1 = 1 + coinAdd * picklvl;
 			coinspersec2 = coinspersec1 * autominercount;
 			coinspersec = coinspersec2 * 20;
