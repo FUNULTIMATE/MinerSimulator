@@ -2,7 +2,7 @@ javascript:
 	var coins = 0;
 	var minelvl = 1;
 	var picklvl = 0;
-	var upgradepicklvlprice;
+	var upgradepicklvlprice = 500000;
 	var coinAdd = 0;
 	var mineupgradeprice = 100;
 	var autominerupgradeprice = 500;
