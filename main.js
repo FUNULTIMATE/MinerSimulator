@@ -28,7 +28,7 @@ javascript:
 		document.write("<p class='child' id='picklvl'>0</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.2</p></center>");	
+	document.write("<center><p>v1.21</p></center>");	
 	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
