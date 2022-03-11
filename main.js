@@ -24,7 +24,7 @@ javascript:
 	document.write("<button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $" + autominerupgradeprice + "</button>");
 	document.write("<p class='child' id='autominercount'>0</p>");
 	document.write("<p></p>");
-	document.write("<button onclick='upgrademinelvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $" + upgradepicklvlprice + "</button>");
+	document.write("<button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $" + upgradepicklvlprice + "</button>");
 		document.write("<p class='child' id='picklvl'>0</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
