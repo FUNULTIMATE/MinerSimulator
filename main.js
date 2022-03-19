@@ -28,7 +28,7 @@ javascript:
 		document.write("<p class='child' id='picklvl1'>1</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.212</p></center>");	
+	document.write("<center><p>v1.22</p></center>");	
 	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
@@ -153,13 +153,9 @@ function upgradepicklvl(){
 			document.getElementById("coincount").innerHTML = "$" + coins;
 			picklvl = picklvl + 1;
 			document.getElementById("picklvl1").innerHTML = " " + picklvl;
-			var upgradepicklvlprice1 = upgradepicklvlprice * 3.5;
+			var upgradepicklvlprice1 = upgradepicklvlprice * 2.5;
 			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
-			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pick LVL for $" + upgradepicklvlprice;
-			coinspersec1 = 1 + coinAdd * picklvl;
-			coinspersec2 = coinspersec1 * autominercount;
-			coinspersec = coinspersec2 * 20;
-			document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
+			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pickaxe Level For $" + upgradepicklvlprice;
 			};
 };
 function mine(){
