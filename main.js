@@ -159,7 +159,7 @@ function upgradepicklvl(){
 			};
 };
 function mine(){
-			coins = coins + 1 + coinAdd * picklvl;
+			coins = coins + 1 + picklvl * coinAdd;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
