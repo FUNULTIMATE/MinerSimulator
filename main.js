@@ -1,4 +1,17 @@
 javascript: 
+function savegame(){
+	Cookies.set("c.coins", coins, { expires: 365 });
+	Cookies.set("c.minelvl", minelvl, { expires: 365 });
+	Cookies.set("c.picklvl", picklvl, { expires: 365 });
+	Cookies.set("c.upgradepicklvlprice", upgradepicklvlprice, { expires: 365 });
+	Cookies.set("c.coinAdd", coinAdd, { expires: 365 });
+	Cookies.set("c.mineupgradeprice", mineupgradeprice, { expires: 365 });
+	Cookies.set("c.autominerupgradeprice", autominerupgradeprice, { expires: 365 });
+	Cookies.set("c.autominercount", autominercount, { expires: 365 });
+	Cookies.set("c.coinspersec", coinspersec, { expires: 365 });
+	Cookies.set("c.coinspersec1", coinspersec1, { expires: 365 });
+};
+	setInterval(savegame, 5000);
 	var coins = 0;
 	var minelvl = 1;
 	var picklvl = 1;
@@ -9,6 +22,17 @@ javascript:
 	var autominercount = 0;
 	var coinspersec = 0;
 	var coinspersec1 = 0;
+
+	var coins = Cookies.get("c.coins");
+	var minelvl = Cookies.get("c.minelvl");
+	var picklvl = Cookies.get("c.picklvl");
+	var upgradepicklvlprice = Cookies.get("c.upgradepicklvlprice");
+	var coinAdd = Cookies.get("c.coinAdd");
+	var mineupgradeprice = Cookies.get("c.mineupgradeprice");
+	var autominerupgradeprice = Cookies.get("c.autominerupgradeprice");
+	var autominercount = Cookies.get("c.autominercount");
+	var coinspersec = Cookies.get("c.coinspersec");
+	var coinspersec1 = Cookies.get("c.coinspersec1");
 	document.write("<style>body {background-image: url('https://3.pixiecdn.com/sprites/231119/original.png');}</style>");
 	document.write("<style>p {color: #F7DDBA}</style>");
 	document.write("<style>h1 {color: #F7DDBA}</style>");
@@ -28,7 +52,7 @@ javascript:
 		document.write("<p class='child' id='picklvl1'>1</p>");
 	document.write("<hr>");
 	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.23</p></center>");	
+	document.write("<center><p>v1.231</p></center>");	
 	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
