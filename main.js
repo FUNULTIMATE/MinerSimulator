@@ -1,4 +1,3 @@
-javascript: 
 function savegame(){
 	Cookies.set("c.coins", coins, { expires: 365 });
 	Cookies.set("c.minelvl", minelvl, { expires: 365 });
