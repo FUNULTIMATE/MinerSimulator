@@ -31,27 +31,6 @@ function savegame(){
 	var autominercount = Cookies.get('c.autominercount');
 	var coinspersec = Cookies.get('c.coinspersec');
 	var coinspersec1 = Cookies.get('c.coinspersec1');
-	document.write("<style>body {background-image: url('https://3.pixiecdn.com/sprites/231119/original.png');}</style>");
-	document.write("<style>p {color: #F7DDBA}</style>");
-	document.write("<style>h1 {color: #F7DDBA}</style>");
-	document.write("<center><h1 id='coincount'>$0</h1></center>");	
-	document.write("<center><p id='coinpersec'>$0 per sec</p></center>");
-	document.write("<center><img id='mine' src='https://0.pixiecdn.com/sprites/231108/original.png' onclick='mine()'></center>");
-	document.write("<center><p id='minetype'>Coal value is 1</p></center>");
-	document.write("<hr>");
-	document.write("<center><h1>Shop</h1></center>");
-	document.write("<button onclick='upgrademine()' class='ccbtn' id='upgradebutton'>upgrade mine for $" + mineupgradeprice + "</button>");
-	document.write("<p class='child' id='minelvlcount'>1</p>");	
-	document.write("<p></p>");
-	document.write("<button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $" + autominerupgradeprice + "</button>");
-	document.write("<p class='child' id='autominercount'>0</p>");
-	document.write("<p></p>");
-	document.write("<button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $" + upgradepicklvlprice + "</button>");
-		document.write("<p class='child' id='picklvl1'>1</p>");
-	document.write("<hr>");
-	document.write("<center><button onclick='txttst();'>Developer Testing</button></center>");
-	document.write("<center><p>v1.231</p></center>");	
-	document.write("<style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>");
 	var password = "Evan1233";
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
