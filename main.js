@@ -1,15 +1,3 @@
-function savegame(){
-	Cookies.set('c.coins', coins, { expires: 365 });
-	Cookies.set('c.minelvl', minelvl, { expires: 365 });
-	Cookies.set('c.picklvl', picklvl, { expires: 365 });
-	Cookies.set('c.upgradepicklvlprice', upgradepicklvlprice, { expires: 365 });
-	Cookies.set('c.coinAdd', coinAdd, { expires: 365 });
-	Cookies.set('c.mineupgradeprice', mineupgradeprice, { expires: 365 });
-	Cookies.set('c.autominerupgradeprice', autominerupgradeprice, { expires: 365 });
-	Cookies.set('c.autominercount', autominercount, { expires: 365 });
-	Cookies.set('c.coinspersec', coinspersec, { expires: 365 });
-	Cookies.set('c.coinspersec1', coinspersec1, { expires: 365 });
-};
 	var coins = 0
 	var minelvl = 1
 	var picklvl = 1
@@ -167,9 +155,4 @@ function automine(){
 			coins = coins + 1 + coinAdd * autominercount;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
-function txttst(){
-	var txt = prompt("Insert Developer password to continue:");
-		if(txt == password){
-			coins = coins + 100000000;
-};
-};
+
