@@ -25,9 +25,9 @@
   <button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $500000</button>
   <p class='child' id='picklvl1'>1</p>
   <hr>  
-  <center><button onclick='savegame();'>Save Game</button></center>
+  <center><button onclick="Cookies.set('c.coins', coins, { expires: 365 });Cookies.set('c.minelvl', minelvl, { expires: 365 });Cookies.set('c.picklvl', picklvl, { expires: 365 });Cookies.set('c.upgradepicklvlprice', upgradepicklvlprice, { expires: 365 });Cookies.set('c.coinAdd', coinAdd, { expires: 365 });Cookies.set('c.mineupgradeprice', mineupgradeprice, { expires: 365 });Cookies.set('c.autominerupgradeprice', autominerupgradeprice, { expires: 365 });Cookies.set('c.autominercount', autominercount, { expires: 365 });Cookies.set('c.coinspersec', coinspersec, { expires: 365 });Cookies.set('c.coinspersec1', coinspersec1, { expires: 365 });">Save Game</button></center>
   <hr>
-  <center><button onclick='txttst();'>Developer Testing</button></center>
-  <center><p>v1.242</p></center>
+  <center><button onclick="var txt = prompt('Insert Developer password to continue:');if(txt == password){coins = coins + 100000000;};">Developer Testing</button></center>
+  <center><p>v1.2421</p></center>
   <style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>
  </body>
