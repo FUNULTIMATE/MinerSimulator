@@ -8,16 +8,6 @@
 	var autominercount = 0;
 	var coinspersec = 0;
 	var coinspersec1 = 0;
-	var coins = Cookies.get('c.coins');
-	var minelvl = Cookies.get('c.minelvl');
-	var picklvl = Cookies.get('c.picklvl');
-	var upgradepicklvlprice = Cookies.get('c.upgradepicklvlprice');
-	var coinAdd = Cookies.get('c.coinAdd');
-	var mineupgradeprice = Cookies.get('c.mineupgradeprice');
-	var autominerupgradeprice = Cookies.get('c.autominerupgradeprice');
-	var autominercount = Cookies.get('c.autominercount');
-	var coinspersec = Cookies.get('c.coinspersec');
-	var coinspersec1 = Cookies.get('c.coinspersec1');
 	var password = "Evan1233";
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
