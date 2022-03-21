@@ -10,7 +10,16 @@ function savegame(){
 	Cookies.set('c.coinspersec', coinspersec, { expires: 365 });
 	Cookies.set('c.coinspersec1', coinspersec1, { expires: 365 });
 };
-	setInterval(savegame, 5000);
+	var coins = 0
+	var minelvl = 1
+	var picklvl = 1
+	var upgradepicklvlprice = 500000;
+	var coinAdd = 0;
+	var mineupgradeprice = 100;
+	var autominerupgradeprice = 500;
+	var autominercount = 0;
+	var coinspersec = 0;
+	var coinspersec1 = 0;
 	var coins = Cookies.get('c.coins');
 	var minelvl = Cookies.get('c.minelvl');
 	var picklvl = Cookies.get('c.picklvl');
