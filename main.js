@@ -21,7 +21,6 @@ function savegame(){
 	var autominercount = 0;
 	var coinspersec = 0;
 	var coinspersec1 = 0;
-
 	var coins = Cookies.get("c.coins");
 	var minelvl = Cookies.get("c.minelvl");
 	var picklvl = Cookies.get("c.picklvl");
