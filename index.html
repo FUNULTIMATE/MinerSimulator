@@ -8,4 +8,24 @@
  <body>
   <script src="main.js"></script>
   <script type="module" src="/path/to/js.cookie.mjs"></script>
+  <style>body {background-image: url('https://3.pixiecdn.com/sprites/231119/original.png');}</style>
+  <style>h1 {color: #F7DDBA}</style>
+  <center><h1 id='coincount'>$0</h1></center>
+  <center><p id='coinpersec'>$0 per sec</p></center>
+  <center><img id='mine' src='https://0.pixiecdn.com/sprites/231108/original.png' onclick='mine()'></center>
+  <center><p id='minetype'>Coal value is 1</p></center>
+  <hr>
+  <center><h1>Shop</h1></center>
+  <button onclick='upgrademine()' class='ccbtn' id='upgradebutton'>upgrade mine for $100</button>
+  <p class='child' id='minelvlcount'>1</p>
+  <p></p>
+  <button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $500</button>
+  <p class='child' id='autominercount'>0</p
+  <p></p>
+  <button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $500000</button>
+  <p class='child' id='picklvl1'>1</p>
+  <hr>
+  <center><button onclick='txttst();'>Developer Testing</button></center>
+  <center><p>v1.24</p></center>
+  <style>.ccbtn {background-color:tan; font-size:20px;font-family: Arial;color: #ffffff;padding: 10px 20px 10px 20px;text-decoration: none;margin-right:15px;margin-bottom:15px;text-transform:uppercase;}.child { display: inline-block; }</style>
  </body>
