@@ -130,6 +130,7 @@ function upgradepicklvl(){
 			coins = coins - upgradepicklvlprice;
 			document.getElementById("coincount").innerHTML = "$" + coins;
 			picklvl = picklvl + 1;
+			coinAdd = coinAdd + 1;
 			document.getElementById("picklvl1").innerHTML = " " + picklvl;
 			var upgradepicklvlprice1 = upgradepicklvlprice * 2.8;
 			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
@@ -137,7 +138,7 @@ function upgradepicklvl(){
 			};
 };
 function mine(){
-	coins = coins + 1 + coinAdd + picklvl;		
+	coins = coins + 1 + coinAdd;		
 	
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
