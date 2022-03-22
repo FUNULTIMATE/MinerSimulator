@@ -9,6 +9,9 @@
 	var coinspersec = 0;
 	var coinspersec1 = 0;
 	var password = "Evan1233";
+	var rare = 0;
+	var rarechance = 100;
+	var rareupgradelvl = 0;
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
 			coins = coins - mineupgradeprice;
@@ -138,12 +141,24 @@ function upgradepicklvl(){
 			};
 };
 function mine(){
-	coins = coins + 1 + coinAdd;		
 	
-			document.getElementById("coincount").innerHTML = "$" + coins;
+	if(rare = rarechance - rareupgradelvl){
+		coins = coins + coinAdd * 15;
+		rare = 0;
+		document.getElementById("coinpersec").innerHTML = "RARE!";
+		setTimeout(unrare, 1000);
+	} else {
+		coins = coins + 1 + coinAdd;		
+		rare = rare + 1;
+		
+	};
+	document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
 			coins = coins + 1 + coinAdd * autominercount;
 			document.getElementById("coincount").innerHTML = "$" + coins;
+};
+function unrare(){
+	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";	
 };
 
