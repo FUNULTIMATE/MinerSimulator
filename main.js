@@ -1,7 +1,7 @@
 	var coins = 0
 	var minelvl = 1
 	var picklvl = 1
-	var upgradepicklvlprice = 500000;
+	var upgradepicklvlprice = 300;
 	var coinAdd = 0;
 	var mineupgradeprice = 100;
 	var autominerupgradeprice = 500;
@@ -131,14 +131,14 @@ function upgradepicklvl(){
 			document.getElementById("coincount").innerHTML = "$" + coins;
 			picklvl = picklvl + 1;
 			document.getElementById("picklvl1").innerHTML = " " + picklvl;
-			var upgradepicklvlprice1 = upgradepicklvlprice * 2.5;
+			var upgradepicklvlprice1 = upgradepicklvlprice * 2.8;
 			upgradepicklvlprice = Math.round(upgradepicklvlprice1);
 			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pickaxe Level For $" + upgradepicklvlprice;
 			};
 };
 function mine(){
-	var coins1 = coins + 1 + coinAdd;		
-	coins = coins1 * picklvl;
+	coins = coins + 1 + coinAdd + picklvl;		
+	
 			document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
