@@ -18,7 +18,17 @@
   <style>body {background-image: url('https://3.pixiecdn.com/sprites/231119/original.png');}</style>
   <style>h1 {color: #EDB367;font-size:20px;font-family: Arial;}</style>
   <style>p {color: #F7DDBA;font-size:12px;font-family: Arial;}</style>
-  <style>div{border-width:0px;border-style:solid;border-color:black;}</style>
+  <style>.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}</style>
   <div class="row" style="width:100%">
    <div class="column">
     <center><h1>Shop</h1></center>
