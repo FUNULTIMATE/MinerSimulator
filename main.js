@@ -11,7 +11,7 @@
 	var coinspersec1 = 0;
 	var password = "Evan1233";
 	var check = getCookie();
-	if(check != "") {
+	if(check == false) {
        	coins = getCookie("ccoins");
 	minelvl = getCookie("cminelvl");
 	picklvl = getCookie("cpicklvl");
