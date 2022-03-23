@@ -12,7 +12,6 @@
 	var rare = 0;
 	var rarechance = 100;
 	var rareupgradelvl = 0;
-	var rarefound = false;
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
 			coins = coins - mineupgradeprice;
@@ -148,16 +147,15 @@ function mine(){
 		document.getElementById("coinpersec").innerHTML = "RARE!";
 		setTimeout(unrare, 1000);
 	} else {
+		if(rare > rarechance - rareupgradelvl){
+			coins = coins + 1 + coinAdd * 50;
+			document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
+		};
 		coins = coins + 1 + coinAdd;		
 		rare = rare + 1;
 		
 	};
 	document.getElementById("coincount").innerHTML = "$" + coins;
-};
-if(rarefound = true){
-	coins = coins + 1 + coinAdd * 50;
-	rarefound = false;
-	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
 };
 function automine(){
 			coins = coins + 1 + coinAdd * autominercount;
