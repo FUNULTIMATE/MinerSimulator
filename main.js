@@ -154,7 +154,7 @@ function mine(){
 	};
 	document.getElementById("coincount").innerHTML = "$" + coins;
 };
-if(rarefound = true){
+if(rarefound == true){
 	coins = coins + 1 + coinAdd * 50;
 	rarefound = false;
 	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
