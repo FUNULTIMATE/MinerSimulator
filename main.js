@@ -157,3 +157,7 @@ function rarey(){
 function unrarey(){
 	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
 };
+function savegame(){
+	document.cookie = "ccoins=" + coins +"; path=/; cminelvl=" + minelvl +"; cpicklvl=" + picklvl +"; cupgradepicklvlprice=" + cupgradepicklvlprice +"; ccoinAdd=" + coinAdd +"; cmineupgradeprice=" + mineupgradeprice +"; cautominerupgradeprice=" + autominerupgradeprice +"; cautominercount=" + autominercount +"; ccoinspersec=" + coinspersec +"; ccoinspersec1=" + coinspersec1 +"; expires=Thu, 01 Jan 2300 00:00:00 GMT";	
+	
+};
