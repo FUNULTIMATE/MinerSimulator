@@ -143,13 +143,13 @@ function upgradepicklvl(){
 function mine(){
 	if(rare == rarechance - rareupgradelvl){
 		rarefound = true;
-		rare = 0;
 		document.getElementById("coinpersec").innerHTML = "RARE!";
 		setTimeout(unrare, 1000);
 	} else {
 		if(rare > rarechance - rareupgradelvl){
 			coins = coins + 1 + coinAdd * 50;
 			document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
+			rare = 0;
 		};
 		coins = coins + 1 + coinAdd;		
 		rare = rare + 1;
