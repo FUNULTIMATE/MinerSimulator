@@ -1,3 +1,4 @@
+
 	var coins = 0
 	var minelvl = 1
 	var picklvl = 1
@@ -9,6 +10,18 @@
 	var coinspersec = 0;
 	var coinspersec1 = 0;
 	var password = "Evan1233";
+	var check = getCookie("ccoins");
+	if(check != "") {
+       	coins = getCookie("ccoins");
+	minelvl = getCookie("cminelvl");
+	picklvl = getCookie("cpicklvl");
+	upgradepicklvlprice = getCookie("cupgradepicklvlprice");
+	mineupgradeprice = getCookie("cmineupgradeprice");
+	autominerupgradeprice = getCookie("cautominerupgradeprice");
+	autominercount = getCookie("cautominercount");
+	coinspersec = getCookie("ccoinspersec");
+	coinspersec1 = getCookie("ccoinspersec1");
+	};
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
 			coins = coins - mineupgradeprice;
