@@ -141,23 +141,22 @@ function upgradepicklvl(){
 			};
 };
 function mine(){
-	if(rare == rarechance - rareupgradelvl){
-		rarefound = true;
-		document.getElementById("coinpersec").innerHTML = "RARE!";
-		setTimeout(unrare, 1000);
-	} else {
-		if(rare > rarechance - rareupgradelvl){
-			coins = coins + 1 + coinAdd * 50;
-			document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
-			rare = 0;
-		};
-		coins = coins + 1 + coinAdd;		
-		rare = rare + 1;
-		
-	};
+	coins = coins + 1 + coinAdd;		
 	document.getElementById("coincount").innerHTML = "$" + coins;
 };
 function automine(){
 			coins = coins + 1 + coinAdd * autominercount;
 			document.getElementById("coincount").innerHTML = "$" + coins;
+};
+setInterval(rarey, 60000);
+function rarey(){
+	if (Math.random() * 100 > 60) {
+ 		 coins = coins + 1 + coinAdd * 50;
+	document.getElementById("coinpersec").innerHTML = "RARE!!";
+	setTimeout(unrarey, 800);
+};
+	
+};
+function unrarey(){
+	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
 };
