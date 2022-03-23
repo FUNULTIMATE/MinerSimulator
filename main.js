@@ -9,9 +9,6 @@
 	var coinspersec = 0;
 	var coinspersec1 = 0;
 	var password = "Evan1233";
-	var rare = 0;
-	var rarechance = 100;
-	var rareupgradelvl = 0;
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
 			coins = coins - mineupgradeprice;
