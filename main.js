@@ -200,6 +200,7 @@ function savegame(){
 	setCookie("cautominercount", autominercount, 1000);
 	setCookie("ccoinspersec", coinspersec, 1000);
 	setCookie("ccoinspersec1", coinspersec1, 1000);
+	console.log("saved");
 };
 function getCookie(cname) {
   let name = cname + "=";
