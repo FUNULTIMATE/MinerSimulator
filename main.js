@@ -10,6 +10,12 @@ function getCookie(cname) {
       return c.substring(name.length, c.length);
     };
   };
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+};
   return "";
 };
 	var coins = 0
@@ -184,8 +190,16 @@ function unrarey(){
 	document.getElementById("coinpersec").innerHTML = "$" + coinspersec + " per sec";
 };
 function savegame(){
-	document.cookie = "ccoins=" + coins + "; path=/; cminelvl=" + minelvl + "; cpicklvl=" + picklvl + "; cupgradepicklvlprice=" + upgradepicklvlprice + "; ccoinAdd=" + coinAdd + "; cmineupgradeprice=" + mineupgradeprice + "; cautominerupgradeprice=" + autominerupgradeprice + "; cautominercount=" + autominercount + "; ccoinspersec=" + coinspersec + "; ccoinspersec1=" + coinspersec1 + "; expires=Thu, 01 Jan 2300 00:00:00 GMT";	
-	
+	setCookie("ccoins", coins, 1000);
+	setCookie("cminelvl", minelvl, 1000);	
+	setCookie("cpicklvl", picklvl, 1000);
+	setCookie("cupgradepicklvlprice", upgradepicklvlprice, 1000);
+	setCookie("ccoinAdd", coinAdd, 1000);	
+	setCookie("cmineupgradeprice", mineupgradeprice, 1000);	
+	setCookie("cautominerupgradeprice", autominerupgradeprice, 1000);
+	setCookie("cautominercount", autominercount, 1000);
+	setCookie("ccoinspersec", coinspersec, 1000);
+	setCookie("ccoinspersec1", coinspersec1, 1000);
 };
 function getCookie(cname) {
   let name = cname + "=";
