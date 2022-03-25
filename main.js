@@ -22,9 +22,9 @@ function pick(pick){
 //};
 //  return "";
 //};
-	var coins = 0
-	var minelvl = 1
-	var picklvl = 1
+	var coins = 0;
+	var minelvl = 1;
+	var picklvl = 1;
 	var upgradepicklvlprice = 300;
 	var coinAdd = 0;
 	var mineupgradeprice = 100;
@@ -33,7 +33,7 @@ function pick(pick){
 	var coinspersec = 0;
 	var coinspersec1 = 0;
 	var password = "Evan1233";
-	let check = getCookie("ccoins");
+//	let check = getCookie("ccoins");
 	pick("https://2.pixiecdn.com/sprites/232230/original.png");
 //	if(check != "") {
 //       	coins = getCookie("ccoins");
