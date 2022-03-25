@@ -1,3 +1,4 @@
+element.style.cursor = "url('https://2.pixiecdn.com/sprites/232230/original.png'), auto";
 function getCookie(cname) {
   let name = cname + "=";
   let ca = document.cookie.split(';');
