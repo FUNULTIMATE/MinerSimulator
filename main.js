@@ -1,5 +1,5 @@
 function pick(pick){	
-	element.style.cursor = "url(" + pick + "), auto";
+	element.style.cursor = "url('" + pick + "'), auto";
 };
 
 //function getCookie(cname) {
