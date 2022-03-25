@@ -1,24 +1,26 @@
 element.style.cursor = "url('https://2.pixiecdn.com/sprites/232230/original.png'), auto";
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    };
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    };
-  };
-function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires="+d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-};
-  return "";
-};
+
+
+//function getCookie(cname) {
+//  let name = cname + "=";
+//  let ca = document.cookie.split(';');
+//  for(let i = 0; i < ca.length; i++) {
+//    let c = ca[i];
+//    while (c.charAt(0) == ' ') {
+//      c = c.substring(1);
+//    };
+//    if (c.indexOf(name) == 0) {
+//      return c.substring(name.length, c.length);
+//    };
+//  };
+//function setCookie(cname, cvalue, exdays) {
+//  const d = new Date();
+//  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//  let expires = "expires="+d.toUTCString();
+//  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+//};
+//  return "";
+//};
 	var coins = 0
 	var minelvl = 1
 	var picklvl = 1
@@ -31,17 +33,17 @@ function setCookie(cname, cvalue, exdays) {
 	var coinspersec1 = 0;
 	var password = "Evan1233";
 	let check = getCookie("ccoins");
-	if(check != "") {
-       	coins = getCookie("ccoins");
-	minelvl = getCookie("cminelvl");
-	picklvl = getCookie("cpicklvl");
-	upgradepicklvlprice = getCookie("cupgradepicklvlprice");
-	mineupgradeprice = getCookie("cmineupgradeprice");
-	autominerupgradeprice = getCookie("cautominerupgradeprice");
-	autominercount = getCookie("cautominercount");
-	coinspersec = getCookie("ccoinspersec");
-	coinspersec1 = getCookie("ccoinspersec1");
-	};
+//	if(check != "") {
+//       	coins = getCookie("ccoins");
+//	minelvl = getCookie("cminelvl");
+//	picklvl = getCookie("cpicklvl");
+//	upgradepicklvlprice = getCookie("cupgradepicklvlprice");
+//	mineupgradeprice = getCookie("cmineupgradeprice");
+//	autominerupgradeprice = getCookie("cautominerupgradeprice");
+//	autominercount = getCookie("cautominercount");
+//	coinspersec = getCookie("ccoinspersec");
+//	coinspersec1 = getCookie("ccoinspersec1");
+//	};
 function upgrademine(){
 			if(coins >= mineupgradeprice && minelvl < 20){
 			coins = coins - mineupgradeprice;
