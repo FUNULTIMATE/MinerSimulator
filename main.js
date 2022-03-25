@@ -1,5 +1,6 @@
-element.style.cursor = "url('https://2.pixiecdn.com/sprites/232230/original.png'), auto";
-
+function pick(pick){	
+	element.style.cursor = "url(" + pick + "), auto";
+};
 
 //function getCookie(cname) {
 //  let name = cname + "=";
@@ -33,6 +34,7 @@ element.style.cursor = "url('https://2.pixiecdn.com/sprites/232230/original.png'
 	var coinspersec1 = 0;
 	var password = "Evan1233";
 	let check = getCookie("ccoins");
+	pick("https://2.pixiecdn.com/sprites/232230/original.png");
 //	if(check != "") {
 //       	coins = getCookie("ccoins");
 //	minelvl = getCookie("cminelvl");
