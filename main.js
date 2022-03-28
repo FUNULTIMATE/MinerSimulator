@@ -18,6 +18,12 @@
 //};
 //  return "";
 //};
+$(document).mousemove(function(e) {
+  $("#follow").css({
+    left: e.pageX,
+    top: e.pageY
+  });
+});
 	var coins = 0;
 	var minelvl = 1;
 	var picklvl = 1;
