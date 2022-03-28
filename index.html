@@ -22,19 +22,28 @@
   display: table;
   clear: both;
 }</style>
-  <div class="row">
-   <div class="column">
-    <center><h1>Shop</h1></center>
-    <button onclick='upgrademine()' class='ccbtn' id='upgradebutton'>upgrade mine for $100</button>
-    <p class='child' id='minelvlcount'>1</p>
-    <p></p>
-    <button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $500</button>
-    <p class='child' id='autominercount'>0</p
-    <p></p>
-    <button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $300</button>
-    <p class='child' id='picklvl1'>1</p>
-   </div>
-   <div class="column">
+ <style>
+  #follow {
+  position: absolute;
+  text-align: center;
+}
+ </style>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <div id="follow"><img src="https://placekitten.com/96/140" /><br>Kitteh</br>
+ </div>
+ <div class="row">
+  <div class="column">
+   <center><h1>Shop</h1></center>
+   <button onclick='upgrademine()' class='ccbtn' id='upgradebutton'>upgrade mine for $100</button>
+   <p class='child' id='minelvlcount'>1</p>
+   <p></p>
+   <button onclick='upgradeautominercount()' class='ccbtn' id='upgradebutton2'>Upgrade Auto Miner Count $500</button>
+   <p class='child' id='autominercount'>0</p
+   <p></p>
+   <button onclick='upgradepicklvl()' class='ccbtn' id='upgradebutton3'>Upgrade Pickaxe Level $300</button>
+   <p class='child' id='picklvl1'>1</p>
+  </div>  
+  <div class="column">
     <center><h1 id='coincount'>$0</h1></center>
     <center><p id='coinpersec'>$0 per sec</p></center>
     <center><img id='mine' src='https://0.pixiecdn.com/sprites/231108/original.png' onclick='mine()'></center>
