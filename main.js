@@ -1,7 +1,3 @@
-function pick(pick){	
-	element.style.cursor = "url('" + pick + "'), auto";
-};
-
 //function getCookie(cname) {
 //  let name = cname + "=";
 //  let ca = document.cookie.split(';');
@@ -174,34 +170,33 @@ function upgradepicklvl(){
 			document.getElementById("upgradebutton3").innerHTML = "Upgrade Pickaxe Level For $" + upgradepicklvlprice;
 			};
 			if(picklvl == 2){
-			document.write("<style>body {cursor: url('https://3.pixiecdn.com/sprites/232231/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 3){
-			document.write("<style>body {cursor: url('https://0.pixiecdn.com/sprites/232232/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 4){
-			document.write("<style>body {cursor: url('https://1.pixiecdn.com/sprites/232233/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 5){
-			document.write("<style>body {cursor: url('https://2.pixiecdn.com/sprites/232234/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 6){
-			document.write("<style>body {cursor: url('https://3.pixiecdn.com/sprites/232235/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 7){
-			document.write("<style>body {cursor: url('https://0.pixiecdn.com/sprites/232236/original.png'), auto;}</style>");	
 			};
 			if(picklvl == 8){
-			document.write("<style>body {cursor: url('https://1.pixiecdn.com/sprites/232237/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 8){
-			document.write("<style>body {cursor: url('https://2.pixiecdn.com/sprites/232238/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 9){
-			document.write("<style>body {cursor: url('https://2.pixiecdn.com/sprites/232239/original.png'), auto;}</style>");	
+
 			};
 			if(picklvl == 10){
-			document.write("<style>body {cursor: url('https://3.pixiecdn.com/sprites/232240/original.png'), auto;}</style>");	
+
 			};
 };
 function mine(){
@@ -250,4 +245,19 @@ function getCookie(cname) {
     };
   };
   return "";
+};
+game = {};
+game.mouseMove = function(mouseMovement) {
+    // when the mouse moves, set xPosition and yPosition to the x and y of the cursor,
+    // then assign those x and y to the bee in the css file (position absolute, use top and left)
+    const pick = document.getElementById('pick');
+    let xPosition;
+    let yPosition;
+    if (mouseMovement) {
+        xPosition = mouseMovement.pageX;
+        yPosition = mouseMovement.pageY;
+        pick.style.top = yPosition + 1 + 'px';
+        // added 1 pixel to get the bee off of the cursor itself so you're clicking on what you want to click on not the bee image
+        pick.style.left = xPosition + 'px';
+    };
 };
